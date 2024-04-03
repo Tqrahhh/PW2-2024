@@ -10,8 +10,8 @@ $kartu = new Kartu($db);
 if(isset($_POST['tambah'])){
     $kartu->kode = $_POST['kode'];
     $kartu->nama = $_POST['nama'];
-    $kartu->harga_beli = $_POST['diskon'];
-    $kartu->harga_jual = $_POST['iuran'];
+    $kartu->diskon = $_POST['diskon'];
+    $kartu->iuran = $_POST['iuran'];
 
     $kartu->store(); 
     header("Location: index.php");

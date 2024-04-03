@@ -20,7 +20,7 @@ if(isset($_POST['update'])) {
     exit;
 } elseif(isset($_GET['id'])) {
     $kartu->id = $_GET['id'];
-    $stmt = $produk->edit();
+    $stmt = $kartu->edit();
     $num = $stmt->rowCount();
 
     if($num > 0) {
